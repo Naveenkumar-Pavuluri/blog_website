@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Welcome to React Blog",
+      "content": "lorem .......",
+      "writtenBy": "Nav",
+      "id": "1"
+    },
+    {
+      "title": "Welcome to New Project",
+      "content": "lorem .......",
+      "writtenBy": "Navi",
+      "id": "2"
+    },
+    {
+      "title": "Welcome to Blog Project",
+      "content": "lorem .......",
+      "writtenBy": "Nav",
+      "id": "3"
+    }
+  ]
+}
