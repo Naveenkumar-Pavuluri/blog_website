@@ -1,71 +1,80 @@
-# Getting Started with Create React App
+# Blog Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple blog platform built with React.js that allows users to add and delete blog posts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new blog posts
+- Delete existing blog posts
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have the following installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository**
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/Naveenkumar-Pavuluri/blog_website.git
+   cd blog_website
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Running the Application
 
-### `npm run eject`
+1. **Start the JSON Server**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   The application uses `json-server` to simulate a backend for handling blog data. To run the JSON server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npx json-server --watch db.json --port 8000
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   This command watches the `db.json` file and serves it at `http://localhost:8000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Start the React Application**
 
-## Learn More
+   In a separate terminal window, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   This will start the React development server, and you can view the application at `http://localhost:3000`.
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+blog_website/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── db.json
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+- **`public/`**: Contains static assets
+- **`src/`**: Contains React components and application logic
+- **`db.json`**: JSON file used by `json-server` to store blog data
+- **`package.json`**: Contains project metadata and dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# blog_website
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
